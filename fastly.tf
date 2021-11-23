@@ -14,10 +14,10 @@ resource "fastly_service_v1" "prod" {
   }
 
   backend {
-    address = data.terraform_remote_state.ui_app.jacopen_fastly_ui_website_endpoint
+    address = data.terraform_remote_state.ui_app.outputs.jacopen_fastly_ui_website_endpoint
     name    = "ui"
     port    = "80"
-    override_host = data.terraform_remote_state.ui_app.jacopen_fastly_ui_website_endpoint
+    override_host = data.terraform_remote_state.ui_app.outputs.jacopen_fastly_ui_website_endpoint
   }
 
   vcl {
