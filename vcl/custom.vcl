@@ -11,7 +11,7 @@ sub vcl_recv {
   set var.fastly_req_do_shield = (req.restarts == 0);
 
   if (req.url ~ "^/ui(/[^?]*)?(\?.*)?$"){
-    set req.url = regsub(req.url, "/ui", "/");
+    set req.url = regsub(req.url, "/ui", "");
     set req.backend = F_ui;
   } elseif (req.url ~ "^/(/[^?]*)?(\?.*)?$") {
     set req.backend = F_website;
