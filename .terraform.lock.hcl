@@ -57,3 +57,22 @@ provider "registry.terraform.io/hashicorp/null" {
     "zh:fea4227271ebf7d9e2b61b89ce2328c7262acd9fd190e1fd6d15a591abfa848e",
   ]
 }
+
+provider "registry.terraform.io/splunk/splunk" {
+  version = "1.4.9"
+  hashes = [
+    "h1:SeMmjrebcUNhB30UyQbhQGyDNZXw6wOIA4F4q5x39I0=",
+    "zh:06b36c7a44b32d2e1cfe942603d0fc1e750ede2140bde29902ce5c7d48c56d54",
+    "zh:07b4a53625e4a598721c0bdf5eaaeb56cb52781c1bf830b5cd4ac51b7bfa2919",
+    "zh:0fac58543409d4f381e4bad6a18c2f84e77960275611c6a24f315e626173d27a",
+    "zh:149da46c7583f74c7091be52347f6b93c904a88c7f8be02ba6f0af9c10d5a18c",
+    "zh:24788e540dcaf75b46617a1696f62d8dc43842f97df1e2e542424297297c4b73",
+    "zh:2df3d775e611cf128d0bd6f9f3974f0e43f19d5feddb8bf625f2e0dad1e7f2db",
+    "zh:44db82a2be50e32e701537d57454439eaf7eef8c3966e8a94873472b6b6810c2",
+    "zh:4c8404b0796aca69a56d3038c38034a723e373c92677fe466c8f78d3b3fa2f22",
+    "zh:5df3ce5b97233d532bc5072660e1110d4a6c1c022cfc97cb15deed613f577e89",
+    "zh:7a959b8289ca0a1717c0e271c47e9354f6a92a392ce849c562c61d66bff6b4e7",
+    "zh:969d033f9f6e0c6346d5d7df089aaa09532e6d2b63525a1c42fb68d7b32207b3",
+    "zh:9b2bab2a9857982ec1fef063eed09dd4a958d267f20708c3c14118caa55d5c94",
+  ]
+}
