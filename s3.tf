@@ -31,3 +31,14 @@ resource "null_resource" "remove_and_upload_to_s3" {
     command = "aws s3 sync ${path.module}/website s3://${aws_s3_bucket.jacopen_fastly_test.id}"
   }
 }
+
+data "terraform_remote_state" "ui_app" {
+  backend = "remote"
+
+  config = {
+    organization = "kusama"
+    workspaces = {
+      name = "terraform-fastly-app"
+    }
+  }
+}
