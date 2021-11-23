@@ -1,4 +1,12 @@
 terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "kusama"
+
+    workspaces {
+      name = "terraform-fastly"
+    }
+  }
   required_providers {
     fastly = {
       source = "fastly/fastly"
