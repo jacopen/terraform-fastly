@@ -26,5 +26,11 @@ resource "fastly_service_v1" "prod" {
     main    = true
   }
 
+  snippet {
+    name    = "miss_vcl"
+    content = "${file("${path.module}/vcl/miss_snippet.vcl")}"
+    type    = "miss"
+  }
+
   force_destroy = true
 }
