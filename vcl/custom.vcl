@@ -12,6 +12,8 @@ sub vcl_recv {
 
   if (req.url.path ~ "^/ui"){
     set req.backend = F_ui;
+  } elseif (req.url.path ~ "^/ui2") {
+    set req.backend = F_ui;
   } elseif (req.url.path ~ "^/") {
     set req.backend = F_website;
   }
